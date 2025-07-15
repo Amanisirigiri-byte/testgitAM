@@ -1,0 +1,32 @@
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+     });
+
+pm.test("Status code name as string", ()=>{
+    pm.response.to.have.status("OK");
+})
+
+
+pm.test("Response time is less than 200ms", function () {
+
+    pm.response.to.have.property("responseTime").that.is.below(800);
+});
+
+pm.test("Header contains content-type", function () {
+    pm.response.to.have.header("content-type");
+});
+
+pm.test("Header content-type is application/json", function () {
+
+    pm.expect(pm.response.headers.get("content-type")).to.eql("application/json; charset=utf-8");
+});
+
+
+const jsondata = pm.response.json();
+pm.test("Total number of users is 12", function () {
+    pm.expect(jsondata).to.be.an(Object);
+    pm.expect(jsondata.total).to.eql(12);
+    pm.expect(jsondata.id).to.be.an("number");
+    pm.expect(jsondata.email).to.be.an("string");
+    pm.expect(jsondata.avatar).to.be.an("string");
+});
