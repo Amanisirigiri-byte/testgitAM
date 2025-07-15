@@ -21,7 +21,7 @@ pm.test("Header content-type is application/json", function () {
     pm.expect(pm.response.headers.get("content-type")).to.eql("application/json; charset=utf-8");
 });
 
-
+// video one 
 const jsondata = pm.response.json();
 pm.test("Total number of users is 12", function () {
     pm.expect(jsondata).to.be.an(Object);
@@ -29,4 +29,18 @@ pm.test("Total number of users is 12", function () {
     pm.expect(jsondata.id).to.be.an("number");
     pm.expect(jsondata.email).to.be.an("string");
     pm.expect(jsondata.avatar).to.be.an("string");
+});
+
+
+
+// correct one 
+const jsondata = pm.response.json();
+pm.test("Total number of users is 12", function () {
+    pm.expect(jsondata).to.be.an("object");
+    pm.expect(jsondata).to.have.property('data').that.is.an('array').with.lengthOf(6);
+    jsondata.data.forEach(user => {
+        pm.expect(user).to.have.property('id').that.is.a("number");
+        pm.expect(user).to.have.property('email').that.is.a("string");
+        pm.expect(user).to.have.property('avatar').that.is.a("string");
+    });
 });
