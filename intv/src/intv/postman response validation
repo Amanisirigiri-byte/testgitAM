@@ -44,3 +44,13 @@ pm.test("Total number of users is 12", function () {
         pm.expect(user).to.have.property('avatar').that.is.a("string");
     });
 });
+
+
+pm.test("values of the fields", function () {
+
+pm.expect(jsondata.data[0]).to.have.property('id').that.is.equal(1);
+ pm.expect(jsondata.data[0]).to.have.property('email').that.is.equal("george.bluth@reqres.in");
+ pm.expect(jsondata.data[0]).to.have.property('first_name').that.is.equal("George");
+pm.expect(jsondata.data[0]).to.have.property('last_name').that.is.equal("Bluth");
+pm.expect(jsondata.data[0]).to.have.property('avatar').that.is.equal("https://reqres.in/img/faces/1-image.jpg");
+});
