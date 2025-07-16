@@ -1,0 +1,46 @@
+Here's a **Story Point Estimation Matrix for Testing Tasks**, specifically designed to help QA/Test Engineers quickly estimate effort based on complexity, uncertainty, and work volume.
+
+---
+
+## ✅ **Story Point Estimation Matrix for Testing**
+
+| Story Points                      | Description                                                                          | Example QA Tasks                                                                                                                |
+| --------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| **1 (Very Low)**                  | Very simple change, low risk, minimal validation. No data setup needed.              | - UI label change<br>- Single field validation<br>- Test case update only                                                       |
+| **2 (Low)**                       | Simple functionality, clear acceptance criteria, limited scenarios.                  | - Login field validation<br>- Basic form testing<br>- Simple API test                                                           |
+| **3 (Medium-Low)**                | Slightly more complex logic, a few validations, some data setup.                     | - Password reset<br>- Validating user role access<br>- Testing pagination logic                                                 |
+| **5 (Medium)**                    | Multiple validation points, moderate backend interaction, and edge cases.            | - New screen testing<br>- CRUD operations<br>- Integration with backend API<br>- Some automation included                       |
+| **8 (High)**                      | Complex logic, multiple components, regression impact, possible automation.          | - Checkout flow<br>- Multi-step forms<br>- Workflow involving multiple roles and permissions                                    |
+| **13 (Very High)**                | High complexity, unknowns, test data creation, multiple environments or systems.     | - Testing across platforms (web/mobile)<br>- End-to-end order placement with payment<br>- Test data stubbing, mocks needed      |
+| **21+ (Epic or Needs Splitting)** | Too large for one sprint, needs breakdown. May include multiple stories or features. | - Entire module testing<br>- New feature with automation + performance testing<br>- Requires coordination across multiple teams |
+
+---
+
+### 🔍 Key Estimation Factors
+
+| Factor                | Considerations                                   |
+| --------------------- | ------------------------------------------------ |
+| **Complexity**        | Number of conditions, workflows, business logic  |
+| **Data Setup**        | Need for stubs, test data creation, environments |
+| **Integration**       | APIs, 3rd-party tools, DB interactions           |
+| **Regression Impact** | Will it affect other modules?                    |
+| **Automation Scope**  | Is automation needed? Is framework ready?        |
+| **Uncertainty/Risks** | Are requirements unclear or changing?            |
+
+---
+
+### 🛠️ Optional Add-On: Relative Estimation Scale (for reference)
+
+| Scale | Relative Effort                        |
+| ----- | -------------------------------------- |
+| 1     | Trivial                                |
+| 2     | Easy                                   |
+| 3     | Manageable                             |
+| 5     | Moderate                               |
+| 8     | Difficult                              |
+| 13    | Very Difficult                         |
+| 21    | Extremely Difficult or Needs Breakdown |
+
+---
+
+Would you like this matrix as a **downloadable PDF/Excel format** or included in a **Jira Estimation Guideline Template**?
