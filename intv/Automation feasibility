@@ -1,0 +1,100 @@
+Analyzing **automation scope** is an essential part of test planning. It helps identify **what can and should be automated**, based on cost-benefit, stability, reusability, and ROI (Return on Investment). Here's a step-by-step method to analyze automation scope effectively:
+
+---
+
+## ✅ **How to Analyze Automation Scope**
+
+### 🔍 1. **Understand the Application and Feature**
+
+* What is the functionality under test?
+* Is the feature **UI-based**, **API-based**, or **backend logic**?
+* Is the feature **stable**, or will it change frequently?
+
+> 🟡 If it's still under development or unstable, **defer automation**.
+
+---
+
+### ⚙️ 2. **Evaluate Test Case Suitability**
+
+Use the **test case automation checklist**:
+
+| Criteria                                              | Automation Suitability |
+| ----------------------------------------------------- | ---------------------- |
+| **Repeatable**                                        | Yes ✅                  |
+| **Frequently executed** (e.g., regression)            | Yes ✅                  |
+| **Stable requirements**                               | Yes ✅                  |
+| **High effort to test manually**                      | Yes ✅                  |
+| **Data-driven scenarios**                             | Good candidate         |
+| **Highly visual/subjective** (e.g., UI design checks) | ❌ No                   |
+| **Short lifespan**                                    | ❌ No                   |
+| **Requires heavy human judgment**                     | ❌ No                   |
+
+---
+
+### 📋 3. **Categorize Tests by Type**
+
+| Test Type                       | Automation Priority    |
+| ------------------------------- | ---------------------- |
+| **Smoke tests**                 | High ✅                 |
+| **Regression tests**            | High ✅                 |
+| **Sanity tests**                | Medium                 |
+| **End-to-End flows**            | High (if stable)       |
+| **Exploratory/UI layout tests** | Low ❌                  |
+| **Negative test cases**         | Medium (if repeatable) |
+
+---
+
+### 🧮 4. **Analyze ROI (Return on Investment)**
+
+Ask:
+
+* How long will it take to automate?
+* How often is the test executed?
+* How much manual time does it save?
+* Will it reduce release cycles?
+
+> 🔁 Focus on **"Automate Once, Use Many Times"** cases.
+
+---
+
+### 🔧 5. **Check Tool and Framework Support**
+
+* Can your automation framework (e.g., Selenium, RestAssured, Cucumber) support the technology used in the feature?
+* Do you have reusable methods or page objects?
+* Is test data generation feasible?
+
+---
+
+### 👥 6. **Coordinate with Developers & BAs**
+
+* Confirm that functionality is **functionally complete**.
+* Discuss any possible **backend/API hooks** to improve automation.
+* Ask about **feature flags** or toggles.
+
+---
+
+### 🧭 7. **Prioritize Automation Scope**
+
+Create a **priority matrix** like:
+
+| Priority | Criteria                                  |
+| -------- | ----------------------------------------- |
+| High     | Smoke, regression, stable core features   |
+| Medium   | Repeated scenarios with moderate coverage |
+| Low      | UI-heavy, rarely run, unstable features   |
+
+---
+
+## 📊 Final Output: Automation Scope Report
+
+For each user story or feature:
+
+| Test Case / Feature         | Automation Feasible (Y/N) | Priority | Notes                           |
+| --------------------------- | ------------------------- | -------- | ------------------------------- |
+| Login functionality         | Yes ✅                     | High     | Stable, used in all test cycles |
+| UI theme changes            | No ❌                      | Low      | Too visual                      |
+| API POST request validation | Yes ✅                     | Medium   | Data-driven                     |
+
+---
+
+Would you like a **template in Excel or Confluence** format for documenting automation scope?
