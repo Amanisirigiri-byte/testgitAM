@@ -1,0 +1,42 @@
+
+Chaining Requests 
+
+Pass data between requests using variables. 
+
+// Save a value from the response  
+
+ 
+
+let jsonData = pm.response.json(); 
+
+pm.environment.set("userId", jsonData.id);  
+
+ 
+// Use the variable in the next request 
+// Example: {{userId}} in the request URL or body  Looping Requests 
+
+Use Postman’s Collection Runner or Newman to loop through requests programmatically. 
+
+// Example: Loop through an array of data  
+
+ let data = pm.environment.get("dataArray");  
+
+ 
+
+// Assume it's a JSON array 
+data.forEach(item => { // Perform operations for each item console.log(item); });  
+
+ 
+
+6. Conditional Requests 
+
+Control the flow of requests based on conditions. 
+if (pm.response.code === 200) { postman.setNextRequest("Next Request Name"); } else { postman.setNextRequest(null); // Stop the request chain }  
+
+ 
+
+7. Running Tests in Newman 
+
+Export your Postman collection and run it using Newman for automation. 
+
+Copy the codenewman run collection.json -e environment.json  
