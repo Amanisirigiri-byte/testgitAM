@@ -1,0 +1,81 @@
+Preparing story points for testing involves estimating the **effort required to test a user story**, not just by time but also considering **complexity, risks, and uncertainty**. Here’s a clear step-by-step approach to prepare story points specifically for **testing tasks**:
+
+---
+
+### ✅ Step-by-Step: How to Estimate Story Points for Testing
+
+#### 1. **Understand the User Story Clearly**
+
+* Review the **Acceptance Criteria** and **Definition of Done**.
+* Clarify scope with the Product Owner or BA if needed.
+* Understand dependencies (e.g., environment setup, APIs, backend readiness).
+
+#### 2. **Break Down Testing Tasks**
+
+* Functional Testing
+* UI/UX Validation
+* Test Case Preparation
+* Regression Impact
+* Automation (if in-sprint)
+* Performance/Load Testing (if applicable)
+* Test Data Preparation
+* Bug Rework Time
+
+#### 3. **Consider Complexity Factors**
+
+Ask yourself:
+
+* Are new components involved?
+* Are integrations with external systems required?
+* Is the business logic complex?
+* Are there any unknowns or risks?
+
+#### 4. **Use a Standard Scale**
+
+Most teams use **Fibonacci series**:
+`1, 2, 3, 5, 8, 13, 21` – where:
+
+* **1–3**: Simple testing, clear requirements.
+* **5–8**: Medium complexity, multiple validations, or backend dependency.
+* **13+**: Complex, multiple integrations, automation effort, or unclear areas.
+
+#### 5. **Discuss in Sprint Planning / Poker Sessions**
+
+* Use **Planning Poker** to align the QA and Dev teams.
+* Justify your estimate: “This story is a 5 for QA because we need test data setup, regression impact on 2 modules, and automation.”
+
+#### 6. **Adjust for Reuse & Tools**
+
+* Reusable automation = fewer points.
+* Manual effort = more points.
+* Complex test environments (e.g., mocking APIs or stubs) = higher points.
+
+---
+
+### 📝 Example
+
+**User Story:** “As a user, I want to reset my password via email.”
+
+#### QA Tasks:
+
+* Review requirements (0.5)
+* Write 6 test cases (1)
+* Manual test UI (0.5)
+* Backend email verification (1)
+* Cross-browser test (0.5)
+* Automation (optional) (2)
+* Bug verification and retest (0.5)
+
+**Total Estimated Story Points:** \~5–8 (based on team consensus and risk)
+
+---
+
+### 📌 Tips
+
+* Keep a **reference matrix** of past stories and their points.
+* Regularly **review estimation accuracy** in retrospectives.
+* Don’t estimate purely on time — **think effort + complexity**.
+
+---
+
+Would you like a **template or story point estimation matrix** for testing tasks?
