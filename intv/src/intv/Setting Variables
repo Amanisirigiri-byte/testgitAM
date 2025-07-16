@@ -1,0 +1,27 @@
+1. Setting Variables 
+
+You can set variables dynamically in Postman using JavaScript. 
+
+// Set a global variable 
+pm.globals.set("globalVar", "value");  
+
+// Set an environment variable  
+pm.environment.set("envVar", "value"); 
+
+// Set a collection variable 
+pm.collectionVariables.set("collectionVar", "value");
+
+
+2. Accessing Variables 
+
+Retrieve variables for use in requests or scripts. 
+
+// Get a global variable  
+let globalVar = pm.globals.get("globalVar");  
+
+// Get an environment variable  
+let envVar = pm.environment.get("envVar");  
+
+ 
+// Get a collection variable
+let collectionVar = pm.collectionVariables.get("collectionVar"); 
