@@ -1,0 +1,69 @@
+Here’s a **Jira Estimation Guideline Template for QA/Testing Teams** that you can use to standardize story point estimations in your project.
+
+---
+
+## 📋 **Jira Estimation Guideline Template for QA/Testing**
+
+### 📌 Purpose:
+
+To provide a consistent framework for QA team members to estimate testing effort using story points in Jira.
+
+---
+
+### ✅ **1. Estimation Criteria**
+
+| Criteria                           | Description                                          | Points to Consider                       |
+| ---------------------------------- | ---------------------------------------------------- | ---------------------------------------- |
+| **Complexity**                     | Number of business rules, logic paths                | More complex workflows = higher points   |
+| **Test Case Count**                | How many test cases need to be written and executed  | More cases = more effort                 |
+| **Test Data**                      | Is test data already available or needs setup/mock?  | More data prep = more points             |
+| **Environment Setup**              | Any special setup needed (mock services, stubs, DB)? | New setups = higher effort               |
+| **Regression Scope**               | How many areas will be impacted?                     | Broader impact = more regression         |
+| **Automation Involved**            | Is automation in-sprint or post-sprint?              | In-sprint automation = include in points |
+| **Bug Verification Effort**        | Estimate expected bug rework and retesting           | High rework probability = higher points  |
+| **Cross-platform / Cross-browser** | Testing across multiple browsers/devices             | More combinations = higher points        |
+
+---
+
+### 🧮 **2. Story Point Estimation Matrix**
+
+| Story Points | Description                                                        | QA Examples                                            |
+| ------------ | ------------------------------------------------------------------ | ------------------------------------------------------ |
+| **1**        | Very basic test, minimal risk, few or no test cases                | Label update, UI alignment check                       |
+| **2**        | Simple testing with few validations                                | Login field test, single API response                  |
+| **3**        | Moderate test cases, simple flow with some validation              | Reset password, upload file feature                    |
+| **5**        | Moderate complexity, backend integration, manual + some automation | Form validations, API validations, role-based access   |
+| **8**        | Complex flow, multiple validations, E2E testing                    | Checkout flow, workflow with 3 user roles              |
+| **13**       | High effort, multiple dependencies, large regression area          | Multi-module integration testing, mobile + web testing |
+| **21**       | Too large – split into smaller stories                             | Entire new module or feature                           |
+
+---
+
+### 📊 **3. Jira Usage Tips**
+
+* **Estimation Field**: Use the `Story Points` field in Jira.
+* **Assignee**: Set QA or testing team member who owns the story.
+* **Labels**: Use labels like `QA`, `Automation`, `Regression`, `TestData` for filtering.
+* **Sub-tasks** (optional):
+  Create sub-tasks like:
+
+  * Write Test Cases
+  * Execute Tests
+  * Bug Re-testing
+  * Automation (if in-sprint)
+
+---
+
+### 🔁 **4. Review & Adjust**
+
+| Activity          | When                                                              |
+| ----------------- | ----------------------------------------------------------------- |
+| Estimation Review | During Sprint Planning or Refinement                              |
+| Point Adjustment  | If major scope or requirement changes                             |
+| Retrospective     | Use story point vs actual effort to fine-tune estimates over time |
+
+---
+
+### 📂 Want a Downloadable Version?
+
+Would you like this as a **PDF**, **Excel sheet**, or **Jira-compatible Confluence page** format? I can generate and format it for you.
