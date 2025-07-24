@@ -9,22 +9,24 @@ Here is a **sample Test Plan Document** for a software testing project. You can 
 **Date:** 24-July-2025
 **Version:** 1.0
 
----
 
+-----------------
 ## 1. **Introduction**
+---------------------------------
 
 The purpose of this Test Plan is to define the testing strategy, scope, objectives, approach, resources, and schedule of testing activities for the **Customer Management System**. This document will serve as a guide for the QA team and stakeholders.
 
----
 
+--------------
 ## 2. **Objective**
-
+------------------------------
 To ensure that the application meets the defined functional and non-functional requirements and is free from defects before release.
 
----
 
+
+---------------
 ## 3. **Scope of Testing**
-
+-----------------------------------------
 ### ✅ In Scope:
 
 * Login and Registration Functionality
@@ -40,10 +42,10 @@ To ensure that the application meets the defined functional and non-functional r
 * Penetration Testing
 * Third-party API response validation
 
----
 
+-----------------
 ## 4. **Test Items**
-
+----------------------
 * Web Application Modules
 
   * Login
@@ -52,9 +54,10 @@ To ensure that the application meets the defined functional and non-functional r
   * User Profile
   * Dashboard Metrics
 
----
 
+-----------
 ## 5. **Features to Be Tested**
+----------------------------------
 
 | Feature          | Description                                  |
 | ---------------- | -------------------------------------------- |
@@ -64,26 +67,27 @@ To ensure that the application meets the defined functional and non-functional r
 | Dashboard        | Metrics display and navigation               |
 | Logout           | Session timeout and logout functionality     |
 
----
 
+-------------
 ## 6. **Features Not to Be Tested**
-
+-----------------------------
 * Backend database performance
 * API load/stress handling
 * Admin module (tested separately)
 
----
 
+----------
 ## 7. **Test Strategy**
+---------------------
 
 * **Manual Testing:** For functional and UI validation
 * **Automation Testing:** Selenium + Java + TestNG for regression
 * **Framework:** Cucumber BDD
 * **Tools:** Eclipse, Maven, Jenkins, JIRA
 
----
-
+------------
 ## 8. **Test Deliverables**
+--------------------------
 
 * Test Plan Document
 * Test Cases (Excel or Test Management Tool)
@@ -113,9 +117,10 @@ To ensure that the application meets the defined functional and non-functional r
 | QA Engineer | Bob Smith     | Write and execute test cases       |
 | Developer   | Charlie Lee   | Fix bugs, assist in debugging      |
 
----
 
+----------------
 ## 11. **Schedule**
+----------------------
 
 | Activity           | Start Date  | End Date    |
 | ------------------ | ----------- | ----------- |
@@ -125,10 +130,10 @@ To ensure that the application meets the defined functional and non-functional r
 | Defect Retesting   | 04-Aug-2025 | 06-Aug-2025 |
 | Test Closure       | 07-Aug-2025 | 08-Aug-2025 |
 
----
 
+---------
 ## 12. **Entry and Exit Criteria**
-
+-----------------------------------------------
 ### Entry Criteria:
 
 * Requirements are finalized and signed off
@@ -141,9 +146,11 @@ To ensure that the application meets the defined functional and non-functional r
 * All critical/high severity defects resolved
 * Test Summary Report submitted
 
----
 
+----------
 ## 13. **Risks and Mitigation**
+-------------------------------------------
+
 
 | Risk                     | Impact | Mitigation              |
 | ------------------------ | ------ | ----------------------- |
@@ -151,15 +158,16 @@ To ensure that the application meets the defined functional and non-functional r
 | Build delays             | Medium | Buffer time in schedule |
 | Test data unavailability | Medium | Prepare mock data       |
 
----
 
+----------
 ## 14. **Approvals**
+---------------------------------------
 
 | Name          | Role            | Approval |
 | ------------- | --------------- | -------- |
 | Alice Johnson | QA Lead         | ✅        |
 | John Davis    | Project Manager | ✅        |
 
----
+-----------
 
 Would you like a **downloadable Word or PDF version** of this document? Or shall I customize it for your **specific project or module**?
