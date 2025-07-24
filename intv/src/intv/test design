@@ -1,0 +1,98 @@
+### ✅ How to Prepare a **Test Design** (Step-by-Step)
+
+**Test design** is the process of creating test cases or test scenarios based on the requirements, user stories, or system design. A good test design ensures comprehensive coverage and detects defects early.
+
+---
+
+### 🔹 Step 1: Understand the Requirements
+
+* Review the **Requirement Specification Document (BRD/SRS)** or **User Stories (Agile)**
+* Identify:
+
+  * Functional Requirements (e.g., Login should accept valid credentials)
+  * Non-functional Requirements (e.g., load time < 2 sec)
+  * Acceptance Criteria
+  * Dependencies
+
+---
+
+### 🔹 Step 2: Identify Test Scenarios
+
+From the requirements, break down high-level **test scenarios** (what to test).
+
+**Example: Login Feature**
+
+* Verify successful login with valid credentials
+* Verify error with invalid password
+* Verify login with blank fields
+* Verify "Forgot Password" functionality
+
+---
+
+### 🔹 Step 3: Write Test Cases
+
+Convert each scenario into detailed **test cases**, with inputs, steps, and expected results.
+
+| Field               | Example                                                                       |
+| ------------------- | ----------------------------------------------------------------------------- |
+| **Test Case ID**    | TC\_Login\_001                                                                |
+| **Module**          | Login                                                                         |
+| **Test Scenario**   | Login with valid credentials                                                  |
+| **Test Steps**      | 1. Go to login page<br>2. Enter valid username and password<br>3. Click login |
+| **Test Data**       | Username: testuser<br>Password: Test\@123                                     |
+| **Expected Result** | User should be navigated to dashboard                                         |
+| **Actual Result**   | (To be filled after execution)                                                |
+| **Status**          | Pass/Fail                                                                     |
+| **Priority**        | High                                                                          |
+
+---
+
+### 🔹 Step 4: Apply Test Design Techniques (Optional but Recommended)
+
+Use test design techniques to reduce redundancy and improve coverage:
+
+| Technique                    | Use When                                                      |
+| ---------------------------- | ------------------------------------------------------------- |
+| **Equivalence Partitioning** | Group inputs that should be treated the same                  |
+| **Boundary Value Analysis**  | Input ranges (e.g., age = 18–60)                              |
+| **Decision Table**           | Complex business rules                                        |
+| **State Transition**         | Application changes state (e.g., Order -> Payment -> Shipped) |
+| **Error Guessing**           | Based on tester’s experience (e.g., try SQL in a field)       |
+
+---
+
+### 🔹 Step 5: Organize and Review
+
+* Organize test cases in Excel, Test Management Tools (like TestRail, Zephyr, or JIRA Xray)
+* Review with QA lead or peers
+* Map test cases to requirements (for traceability)
+
+---
+
+### 🔹 Step 6: Prepare Test Data
+
+* Define input values needed for execution
+* Prepare positive and negative test data
+* Ensure sensitive data is anonymized (if required)
+
+---
+
+### 🔹 Step 7: Review and Finalize
+
+* Peer review test design
+* Link test cases to requirements (RTM – Requirement Traceability Matrix)
+* Finalize and get sign-off
+
+---
+
+### 🧠 Example Test Design Summary (for Login):
+
+| Test Scenario   | Positive Cases                   | Negative Cases                                |
+| --------------- | -------------------------------- | --------------------------------------------- |
+| Login           | Valid username & password        | Invalid password, blank fields, SQL injection |
+| Forgot Password | Valid email                      | Invalid email, blank field                    |
+| Session Timeout | Session expires after inactivity | Session still active after timeout            |
+
+---
+
+Would you like a **template in Excel or Word** for test design? Or do you want to **create test cases for a specific feature** (e.g., Search, Profile Update, etc.)?
